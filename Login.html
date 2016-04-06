@@ -1,0 +1,387 @@
+﻿<html lang="en">
+ <head>
+<!-- Add the script to the HEAD of your document -->
+       <script type="text/javascript">
+    var rev = "fwd";
+    function titlebar(val)
+    {
+        var msg  = "Welcome to * HazelFruit Hotel";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+
+        msg = "   |--- "+msg+" ---|";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+            pos = pos+1;
+            scroll = msg.substr(0,pos);
+            document.title = scroll;
+            timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else{
+            rev = "bwd";
+            timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else{
+            if(pos > 0){
+            pos = pos-1;
+            var ale = le-pos;
+            scrol = msg.substr(ale,le);
+            document.title = scrol;
+            timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else{
+            rev = "fwd";
+            timer = window.setTimeout("titlebar("+pos+")",speed);
+            }    
+        }
+    }
+
+    titlebar(2);
+    </script>
+   <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.6.js" ></script>
+	<script type="text/javascript" src="js/cufon-yui.js"></script>
+	<script type="text/javascript" src="js/cufon-replace.js"></script>  
+	<script type="text/javascript" src="js/Adamina_400.font.js"></script>
+	<script type="text/javascript" src="js/jquery.jqtransform.js" ></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+	<script type="text/javascript" src="js/kwicks-1.5.1.pack.js" ></script>
+	<script type="text/javascript" src="js/atooltip.jquery.js"></script>
+	<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+ </head>
+	<body onLoad="scrlsts()">    
+		<div class="bg1">
+    <div class="bg2">
+	  <div class="main">
+           <header>
+            <table width=100% border="0">
+             <tbody>
+              <tr>
+               <td width="27%"><a href="index.html"><a href="index.html">
+                 <div align="center" style="overflow: hidden; padding: 0px; width: 309px; height: 110px;">
+                   <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="309" height="154" align="absbottom" id="FlashID" title="HazelFruit Hotel">
+                     <param name="movie" value="images/flashvortex.swf">
+                     <param name="quality" value="high">
+                     <param name="wmode" value="opaque">
+                     <param name="swfversion" value="8.0.35.0">
+                     <param name="expressinstall" value="Scripts/expressInstall.swf">
+                     <object data="images/flashvortex.swf" type="application/x-shockwave-flash" width="309" height="154" align="bottom">
+                       <param name="quality" value="high">
+                       <param name="wmode" value="opaque">
+                       <param name="swfversion" value="8.0.35.0">
+                       <param name="expressinstall" value="Scripts/expressInstall.swf">
+                     </object>
+                   </object>
+</div>
+               </a>
+             </td>
+               <td width="50%">
+                <marquee behavior="scroll" onMouseOver="this.setAttribute('scrollamount', 0, 0);" OnMouseOut="this.setAttribute('scrollamount', 6, 0)">
+                 <span>|</span>| 
+                 <font face="comic sans ms, Courier New, Courier, monospace">
+                 O U R &nbsp;&nbsp;V I S I O N :|>|: &nbsp;&nbsp;" W E&nbsp;&nbsp; V A L U E&nbsp;&nbsp; O U R&nbsp;&nbsp;E V E R Y&nbsp;&nbsp; C U S T O M E R... &nbsp;&nbsp;&nbsp;G I V E &nbsp;&nbsp;T H E&nbsp;&nbsp; B E S T . . .&nbsp;&nbsp;&nbsp;E V E R Y &nbsp;&nbsp;T I M E . . ."
+                 </font>
+                 |<span>|</span>
+                </marquee>
+                <br>
+                <center><!--!HazelFruit Neon Light Board!--><!--!End of HazelFruit Neon Light Board!--></center></td>
+                  <td width="23%">
+                   <div align="right" id="logo1">
+                    <img src="images/clock/dg8.gif" name="hr1" >
+                    <img src="images/clock/dg8.gif" name="hr2">
+                    <img src="images/clock/dgc.gif">
+                    <img src="images/clock/dg8.gif" name="mn1">
+                    <img src="images/clock/dg8.gif" name="mn2">
+                    <img src="images/clock/dgc.gif">
+                    <img src="images/clock/dg8.gif" name="se1">
+                    <img src="images/clock/dg8.gif" name="se2"> 
+                    <img src="images/clock/dgam.gif" name="ampm">
+                   </div>
+                   <script type="text/javascript">
+					dg = new Array();
+     				dg[0]=new Image();dg[0].src="images/clock/dg0.gif";
+                    dg[1]=new Image();dg[1].src="images/clock/dg1.gif";
+                    dg[2]=new Image();dg[2].src="images/clock/dg2.gif";
+                    dg[3]=new Image();dg[3].src="images/clock/dg3.gif";
+                    dg[4]=new Image();dg[4].src="images/clock/dg4.gif";
+                    dg[5]=new Image();dg[5].src="images/clock/dg5.gif";
+                    dg[6]=new Image();dg[6].src="images/clock/dg6.gif";
+                    dg[7]=new Image();dg[7].src="images/clock/dg7.gif";
+                    dg[8]=new Image();dg[8].src="images/clock/dg8.gif";
+                    dg[9]=new Image();dg[9].src="images/clock/dg9.gif";
+                    dgam=new Image();dgam.src="images/clock/dgam.gif";
+                    dgpm=new Image();dgpm.src="images/clock/dgpm.gif";
+					
+					function dotime()
+					{
+						var d=new Date();
+                        var hr=d.getHours(),mn=d.getMinutes(),se=d.getSeconds();
+                        // set AM or PM
+                        document.ampm.src=((hr<12)?dgam.src:dgpm.src);
+						// adjust from 24hr clock
+						if(hr==0)
+						{
+							hr=12;
+						}
+						else if(hr>12)
+						{
+							hr-=12;
+						}
+						document.hr1.src = getSrc(hr,10);
+						document.hr2.src = getSrc(hr,1);
+						document.mn1.src = getSrc(mn,10);
+						document.mn2.src = getSrc(mn,1);
+		  				document.se1.src = getSrc(se,10);
+						document.se2.src = getSrc(se,1);
+                    }
+					function getSrc(digit,index)
+                    {
+						return dg[(Math.floor(digit/index)%10)].src;
+                    }
+                    window.onload=function()
+                    {
+						dotime();
+						setInterval(dotime,1000);
+                    }
+					</script>
+                     Hazelfruit Hotel,<br> 
+                        Beach Road, <br>
+                        Matara,<br>
+                        Sri Lanka.<br>
+                       <span>Phone: &nbsp;&nbsp; +94 71 9553646</span>
+                   
+                  </td>
+               </tr>
+              </tbody>
+             </table>
+           </header><!-- header end -->
+		   <!-- content -->
+           <div class="box">
+            <div class="ic" ><!--Som Text here--></div>
+	<nav>
+			 <ul id="menu"  class="active">
+			  <li><a href="About.html">About Us</a></li>
+			  <li><a href="Services.html">Services</a></li>
+              <li><a href="Rooms.html">Rooms</a></li>
+              <li><a href="Locations.html">Locations</a></li>
+             </ul>
+            </nav>
+            <article id="content">
+    <div class="box1">
+      <div class="col2 pad">
+				<style type="text/css">
+				body {
+					background-color: #000000;
+					color: #5a5656;
+					font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+					font-size: 16px;
+					line-height: 1.5em;
+					}
+					a { text-decoration: none; }
+					h1 { font-size: 1em; }
+					h1, p {
+						margin-bottom: 10px;
+						}
+						strong {
+							font-weight: bold;
+							}
+							.uppercase { text-transform: uppercase; }
+							
+							/* ---------- LOGIN ---------- */
+							#login {
+								margin: 50px auto;
+								width: 300px;
+								}
+								form fieldset input[type="text"], input[type="password"] {
+									background-color: #e5e5e5;
+									border: none;
+									border-radius: 3px;
+									-moz-border-radius: 3px;
+									-webkit-border-radius: 3px;
+									color: #5a5656;
+									font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+									font-size: 14px;
+									height: 50px;
+									outline: none;
+									padding: 0px 10px;
+									width: 280px;
+									-webkit-appearance:none;
+									}
+									form fieldset input[type="submit"] {
+										background-color: #008dde;
+										border: none;
+										border-radius: 3px;
+										-moz-border-radius: 3px;
+										-webkit-border-radius: 3px;
+										color: #f4f4f4;
+										cursor: pointer;
+										font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+										height: 50px;
+										text-transform: uppercase;
+										width: 300px;
+										-webkit-appearance:none;
+										}
+										form fieldset a {
+											color: #5a5656;
+											font-size: 10px;
+											}
+											form fieldset a:hover { text-decoration: underline; }
+											.btn-round {
+												background-color: #5a5656;
+												border-radius: 50%;
+												-moz-border-radius: 50%;
+												-webkit-border-radius: 50%;
+												color: #f4f4f4;
+												display: block;
+												font-size: 12px;
+												height: 50px;
+												line-height: 50px;
+												margin: 30px 125px;
+												text-align: center;
+												text-transform: uppercase;
+												width: 50px;
+												}
+												.facebook-before {
+													background-color: #0064ab;
+													border-radius: 3px 0px 0px 3px;
+													-moz-border-radius: 3px 0px 0px 3px;
+													-webkit-border-radius: 3px 0px 0px 3px;
+													color: #f4f4f4;
+													display: block;
+													float: left;
+													height: 50px;
+													line-height: 50px;
+													text-align: center;
+													width: 50px;
+													}
+													.facebook {
+														background-color: #0079ce;
+														border: none;
+														border-radius: 0px 3px 3px 0px;
+														-moz-border-radius: 0px 3px 3px 0px;
+														-webkit-border-radius: 0px 3px 3px 0px;
+														color: #f4f4f4;
+														cursor: pointer;
+														height: 50px;
+														text-transform: uppercase;
+														width: 250px;
+														}
+														.twitter-before {
+															background-color: #189bcb;
+															border-radius: 3px 0px 0px 3px;
+															-moz-border-radius: 3px 0px 0px 3px;
+															-webkit-border-radius: 3px 0px 0px 3px;
+															color: #f4f4f4;
+															display: block;
+															float: left;
+															height: 50px;
+															line-height: 50px;
+															text-align: center;
+															width: 50px;
+															}
+															.twitter {
+																background-color: #1bb2e9;
+																border: none;
+																border-radius: 0px 3px 3px 0px;
+																-moz-border-radius: 0px 3px 3px 0px;
+																-webkit-border-radius: 0px 3px 3px 0px;
+																color: #f4f4f4;
+																cursor: pointer;
+																height: 50px;
+																text-transform: uppercase;
+																width: 250px;
+																}
+                                                                </style>
+                                                                <strong>Welcome. Please Login
+                                </strong>                                  
+                                                                <div id="login"><form action="javascript:void(0);" method="get">
+                                                                  <fieldset>
+                                                                      <p><input type="text" required value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p>
+                                                                    <p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p>
+                                                                    <p><input type="submit" value="Login">
+                                                                    </p>
+                                                                    </fieldset>
+                                                                      </form>
+                                                                      <p>&nbsp;</p>
+                  </div><!--content end-->
+	  </div>
+          <ul id="footer_menu li2">
+           <li class="active"></li>
+          </ul>
+    </div>
+    <div class="main">
+  <table width="952" border="1" bordercolor="#FFFFFF">
+          <tr>
+           <td width="317">
+            <script language="javascript">months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+			 var d=new Date();
+			 var weekday=new Array(7);
+			 weekday[0]="Sunday";
+			 weekday[1]="Monday";
+			 weekday[2]="Tuesday";
+			 weekday[3]="Wednesday";
+			 weekday[4]="Thursday";
+			 weekday[5]="Friday";
+			 weekday[6]="Saturday";
+			 var d = new Date();
+			 (d.getFullYear());
+			 var theDate = new Date(document.lastModified); 
+			 theDate.setTime((theDate.getTime()+(60*60)) ) 
+			 with (theDate) 
+			 {
+				 document.write("<i>Last updated "+weekday[getDay()]+' '+getDate()+' '+months[getMonth()]+' '+d.getFullYear()+' '+getHours()+':'+getMinutes()+" GMT</i>")
+			 } 
+            </script>
+           </td>
+           <td width="317" align="center">Hazelfruit Hotel &copy; 2015<br>Created By 
+            <a href="https://www.facebook.com/sajithdinuka" target="_blank">Sajith Dinuka</a> 
+           </td>
+           <td width="317" align="center">
+            <span class="active">
+             <a href="https://www.facebook.com/sajithdinuka" title="Facebook" target="_blank">
+              <img src="images/icon2.jpg" alt="" width="28" height="22">
+             </a>
+            </span>
+           </td>
+          </tr>
+         </table>
+		 <table border="1" width="952" bordercolor="#FF0004">
+          <tr>
+           <div class="col2" align="center">
+            <nav id="footer_menu">
+             <td width="190" align="center" class="active">| <a href="About.html"> About Us </a> |</td>
+             <td width="190" align="center">| <a href="Services.html"> Services</a> |</td>
+             <td width="190" align="center">| <a href="Booking.html"> Booking</a> |</td>
+             <td width="190" align="center">| <a href="Rooms.html"> Rooms</a> |</td>
+             <td width="190" align="center" class="last">| <a href="Locations.html"> Locations</a> |</td>                  
+            </nav>
+           </div>
+          </tr>
+         </table>
+         <!-- {%FOOTER_LINK} --><!-- footer end -->
+    </div>
+    <script type="text/javascript"> Cufon.now(); </script>
+    <script>
+$(document).ready(function()
+	   {
+		   $('.kwicks').kwicks(
+		   {
+			   max : 500,
+			   spacing : 0,
+			   event : 'mouseover'
+		   });
+	   })
+	   swfobject.registerObject("FlashID");
+swfobject.registerObject("FlashID");
+swfobject.registerObject("FlashID");
+    </script>
+</body>
+</html>
